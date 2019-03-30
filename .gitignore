@@ -1,0 +1,6 @@
+/node_modules/*
+/vendor/*
+/tmp/*
+*.lock
+*.db
+tmp.php

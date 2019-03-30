@@ -1,0 +1,27 @@
+{
+    "name": "stan/test_task",
+    "description": "Just a test task",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Stan Yakubenko (HP)",
+            "email": "sn.yakubenko@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "2.6.3",
+        "cakephp/validation": "^3.7",
+        "symfony/http-foundation": "^4.2",
+        "twig/twig": "^2.0"
+    },
+    "require-dev": {
+        "robmorgan/phinx": "^0.10.6"
+    },"autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "psr-0": {
+            "": "src/Entity"
+        }
+    }
+}

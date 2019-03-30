@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <script src="{{prefix}}/webroot/js/dist/vendors.chunk.js"></script>
+{% endblock %}
+
+{% block navigation %}
+    {{ parent() }}
+    <li class="nav-item">
+        <a class="nav-link active" href="{{prefix}}/logout.php">Logout</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <div id="chatRoom">
+        <chat-room />
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{parent()}}
+
+    <script src="{{prefix}}/webroot/js/dist/room.js"></script>
+{% endblock %}

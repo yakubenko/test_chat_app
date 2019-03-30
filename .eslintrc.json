@@ -1,0 +1,48 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "parser": "babel-eslint"
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:vue/recommended"
+    ],
+    "rules": {
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "vue/html-indent": [2,4],
+        "vue/max-attributes-per-line": 4,
+        "vue/component-name-in-template-casing": ["warn", "kebab-case"],
+        "vue/html-closing-bracket-newline": "off",
+        "no-console":"off",
+        "comma-dangle":"off",
+        "max-len":["warn", 150],
+        "no-new":"off",
+        "no-param-reassign":"off",
+        "object-shorthand":"off",
+        "func-names":"off"
+    },
+    "globals": {
+        "Vue": false,
+        "Vuex": false,
+        "VueRouter": false,
+        "VueI18n": false,
+        "messages": false,
+        "$": false,
+        "jQuery": false,
+        "axios": false,
+        "L":true,
+        "describe": false,
+        "test": false,
+        "it": false,
+        "expect": false,
+        "jest": false,
+        "beforeAll": false,
+        "afterAll": false,
+        "beforeEach": false,
+        "afterEach": false
+    }
+}
