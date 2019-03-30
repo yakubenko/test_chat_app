@@ -2,5 +2,6 @@
 /vendor/*
 /tmp/*
 *.lock
+*.lock.json
 *.db
 tmp.php
